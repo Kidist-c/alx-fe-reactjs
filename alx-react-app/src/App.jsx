@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import WelcomeMessage from './components/WelcomeMessage'
+import MyHeader from './components/Header'
+import LoveParis from './components/MainContent'
+import CityLOver from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +13,10 @@ function App() {
   return (
     <>
     <WelcomeMessage/>
+    <MyHeader/>
+    <LoveParis/>
+    <CityLOver/>
+
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
