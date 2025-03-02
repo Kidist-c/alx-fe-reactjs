@@ -1,4 +1,4 @@
-function LoveParis() {
+function MainContent() {
     return(
         <>
         <main>
@@ -19,4 +19,4 @@ function LoveParis() {
     
     
 
-export default LoveParis;
+export default MainContent;
