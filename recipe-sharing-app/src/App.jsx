@@ -1,19 +1,16 @@
-import { useState } from 'react'
-import RecipeList from './components/RecipeList'
-import AddRecipeForm from './components/AddRecipeForm'
-import { useRecipeStore } from './recipeStore';
+import React from 'react';
+     import RecipeList from './components/RecipeList';
+     import AddRecipeForm from './components/AddRecipeForm';
+     import { useRecipeStore } from './components/recipeStore';
 
-function App() {
-  const [count, setCount] = useState(0)
+     const App = () => {
+       return (
+         <div>
+           <h1>Recipe Sharing Application</h1>
+           <AddRecipeForm />
+           <RecipeList />
+         </div>
+       );
+     };
 
-  return (
-    <>
-    <AddRecipeForm/>
-    <RecipeList/>
-    
-     
-    </>
-  )
-}
-
-export default App
+     export default App;
